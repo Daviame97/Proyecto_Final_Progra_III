@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{975E0C6E-983F-4DEB-9A32-DAF55DC554F2}</ProjectGuid>
+    <ProjectGuid>{D63F3CB0-C035-4646-A622-22625768FD68}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cap_Negocios</RootNamespace>
@@ -41,11 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cap_Datos\Cap_Datos.csproj">
-      <Project>{f9f9aed4-0f28-40c3-8cac-e08b63476a67}</Project>
+      <Project>{bf1f76f4-5564-49e4-87a8-5100828745a2}</Project>
       <Name>Cap_Datos</Name>
     </ProjectReference>
   </ItemGroup>
