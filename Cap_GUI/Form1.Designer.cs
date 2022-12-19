@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dt_fecha = new System.Windows.Forms.DateTimePicker();
+            this.txt_habitacion = new System.Windows.Forms.TextBox();
+            this.txt_cliente = new System.Windows.Forms.TextBox();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
+            this.txt_idReserva = new System.Windows.Forms.TextBox();
+            this.txt_empresa = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ID_Reserva = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
-            this.ID_Reserva = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_empresa = new System.Windows.Forms.TextBox();
-            this.txt_idReserva = new System.Windows.Forms.TextBox();
-            this.txt_cantidad = new System.Windows.Forms.TextBox();
-            this.txt_cliente = new System.Windows.Forms.TextBox();
-            this.txt_habitacion = new System.Windows.Forms.TextBox();
-            this.dt_fecha = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_apellido = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.txt_genero = new System.Windows.Forms.TextBox();
             this.txt_edad = new System.Windows.Forms.TextBox();
@@ -56,7 +57,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txt_apellido = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -85,10 +86,117 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(166, 206);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dt_fecha
+            // 
+            this.dt_fecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_fecha.Location = new System.Drawing.Point(166, 80);
+            this.dt_fecha.Name = "dt_fecha";
+            this.dt_fecha.Size = new System.Drawing.Size(195, 20);
+            this.dt_fecha.TabIndex = 11;
+            // 
+            // txt_habitacion
+            // 
+            this.txt_habitacion.Location = new System.Drawing.Point(166, 126);
+            this.txt_habitacion.Name = "txt_habitacion";
+            this.txt_habitacion.Size = new System.Drawing.Size(100, 22);
+            this.txt_habitacion.TabIndex = 10;
+            // 
+            // txt_cliente
+            // 
+            this.txt_cliente.Location = new System.Drawing.Point(166, 101);
+            this.txt_cliente.Name = "txt_cliente";
+            this.txt_cliente.Size = new System.Drawing.Size(100, 22);
+            this.txt_cliente.TabIndex = 9;
+            // 
+            // txt_cantidad
+            // 
+            this.txt_cantidad.Location = new System.Drawing.Point(166, 52);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(100, 22);
+            this.txt_cantidad.TabIndex = 8;
+            // 
+            // txt_idReserva
+            // 
+            this.txt_idReserva.Location = new System.Drawing.Point(166, 26);
+            this.txt_idReserva.Name = "txt_idReserva";
+            this.txt_idReserva.Size = new System.Drawing.Size(100, 22);
+            this.txt_idReserva.TabIndex = 7;
+            // 
+            // txt_empresa
+            // 
+            this.txt_empresa.Location = new System.Drawing.Point(166, 154);
+            this.txt_empresa.Name = "txt_empresa";
+            this.txt_empresa.Size = new System.Drawing.Size(100, 22);
+            this.txt_empresa.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 160);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Empresa";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 132);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 16);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Habitacion";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Cliente";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Fecha";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Cantidad Personas";
+            // 
+            // ID_Reserva
+            // 
+            this.ID_Reserva.AutoSize = true;
+            this.ID_Reserva.Location = new System.Drawing.Point(15, 29);
+            this.ID_Reserva.Name = "ID_Reserva";
+            this.ID_Reserva.Size = new System.Drawing.Size(79, 16);
+            this.ID_Reserva.TabIndex = 0;
+            this.ID_Reserva.Text = "ID_Reserva";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(469, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(475, 97);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(554, 208);
             this.dataGridView1.TabIndex = 1;
@@ -111,113 +219,6 @@
             this.btn_Salir.Text = "Salir";
             this.btn_Salir.UseVisualStyleBackColor = true;
             // 
-            // ID_Reserva
-            // 
-            this.ID_Reserva.AutoSize = true;
-            this.ID_Reserva.Location = new System.Drawing.Point(15, 29);
-            this.ID_Reserva.Name = "ID_Reserva";
-            this.ID_Reserva.Size = new System.Drawing.Size(79, 16);
-            this.ID_Reserva.TabIndex = 0;
-            this.ID_Reserva.Text = "ID_Reserva";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Cantidad Personas";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Fecha";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cliente";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 16);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Habitacion";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 160);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Empresa";
-            // 
-            // txt_empresa
-            // 
-            this.txt_empresa.Location = new System.Drawing.Point(166, 154);
-            this.txt_empresa.Name = "txt_empresa";
-            this.txt_empresa.Size = new System.Drawing.Size(100, 22);
-            this.txt_empresa.TabIndex = 6;
-            // 
-            // txt_idReserva
-            // 
-            this.txt_idReserva.Location = new System.Drawing.Point(166, 26);
-            this.txt_idReserva.Name = "txt_idReserva";
-            this.txt_idReserva.Size = new System.Drawing.Size(100, 22);
-            this.txt_idReserva.TabIndex = 7;
-            // 
-            // txt_cantidad
-            // 
-            this.txt_cantidad.Location = new System.Drawing.Point(166, 52);
-            this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(100, 22);
-            this.txt_cantidad.TabIndex = 8;
-            // 
-            // txt_cliente
-            // 
-            this.txt_cliente.Location = new System.Drawing.Point(166, 101);
-            this.txt_cliente.Name = "txt_cliente";
-            this.txt_cliente.Size = new System.Drawing.Size(100, 22);
-            this.txt_cliente.TabIndex = 9;
-            // 
-            // txt_habitacion
-            // 
-            this.txt_habitacion.Location = new System.Drawing.Point(166, 126);
-            this.txt_habitacion.Name = "txt_habitacion";
-            this.txt_habitacion.Size = new System.Drawing.Size(100, 22);
-            this.txt_habitacion.TabIndex = 10;
-            // 
-            // dt_fecha
-            // 
-            this.dt_fecha.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_fecha.Location = new System.Drawing.Point(166, 80);
-            this.dt_fecha.Name = "dt_fecha";
-            this.dt_fecha.Size = new System.Drawing.Size(195, 20);
-            this.dt_fecha.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(166, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_apellido);
@@ -238,6 +239,13 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
+            // 
+            // txt_apellido
+            // 
+            this.txt_apellido.Location = new System.Drawing.Point(166, 76);
+            this.txt_apellido.Name = "txt_apellido";
+            this.txt_apellido.Size = new System.Drawing.Size(100, 22);
+            this.txt_apellido.TabIndex = 13;
             // 
             // button2
             // 
@@ -321,18 +329,22 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Cedula";
             // 
-            // txt_apellido
+            // label1
             // 
-            this.txt_apellido.Location = new System.Drawing.Point(166, 76);
-            this.txt_apellido.Name = "txt_apellido";
-            this.txt_apellido.Size = new System.Drawing.Size(100, 22);
-            this.txt_apellido.TabIndex = 13;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(672, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Tabla Reservas";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1068, 638);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Consultar);
@@ -346,6 +358,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -380,6 +393,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
     }
 }
 
