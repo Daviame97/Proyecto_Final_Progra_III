@@ -29,14 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_AgregarReserva = new System.Windows.Forms.Button();
             this.dt_fecha = new System.Windows.Forms.DateTimePicker();
             this.txt_habitacion = new System.Windows.Forms.TextBox();
-            this.txt_cliente = new System.Windows.Forms.TextBox();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.txt_idReserva = new System.Windows.Forms.TextBox();
-            this.txt_empresa = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,17 +44,17 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_apellido = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txt_genero = new System.Windows.Forms.TextBox();
+            this.btn_AgregarCliente = new System.Windows.Forms.Button();
             this.txt_edad = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_ced = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_Borrar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -65,14 +62,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.btn_AgregarReserva);
             this.groupBox1.Controls.Add(this.dt_fecha);
             this.groupBox1.Controls.Add(this.txt_habitacion);
-            this.groupBox1.Controls.Add(this.txt_cliente);
             this.groupBox1.Controls.Add(this.txt_cantidad);
             this.groupBox1.Controls.Add(this.txt_idReserva);
-            this.groupBox1.Controls.Add(this.txt_empresa);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -86,14 +81,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas";
             // 
-            // button1
+            // btn_AgregarReserva
             // 
-            this.button1.Location = new System.Drawing.Point(166, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_AgregarReserva.Location = new System.Drawing.Point(166, 206);
+            this.btn_AgregarReserva.Name = "btn_AgregarReserva";
+            this.btn_AgregarReserva.Size = new System.Drawing.Size(75, 23);
+            this.btn_AgregarReserva.TabIndex = 12;
+            this.btn_AgregarReserva.Text = "Agregar";
+            this.btn_AgregarReserva.UseVisualStyleBackColor = true;
             // 
             // dt_fecha
             // 
@@ -101,52 +96,29 @@
             this.dt_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_fecha.Location = new System.Drawing.Point(166, 80);
             this.dt_fecha.Name = "dt_fecha";
-            this.dt_fecha.Size = new System.Drawing.Size(195, 20);
+            this.dt_fecha.Size = new System.Drawing.Size(184, 20);
             this.dt_fecha.TabIndex = 11;
             // 
             // txt_habitacion
             // 
-            this.txt_habitacion.Location = new System.Drawing.Point(166, 126);
+            this.txt_habitacion.Location = new System.Drawing.Point(166, 129);
             this.txt_habitacion.Name = "txt_habitacion";
-            this.txt_habitacion.Size = new System.Drawing.Size(100, 22);
+            this.txt_habitacion.Size = new System.Drawing.Size(184, 22);
             this.txt_habitacion.TabIndex = 10;
-            // 
-            // txt_cliente
-            // 
-            this.txt_cliente.Location = new System.Drawing.Point(166, 101);
-            this.txt_cliente.Name = "txt_cliente";
-            this.txt_cliente.Size = new System.Drawing.Size(100, 22);
-            this.txt_cliente.TabIndex = 9;
             // 
             // txt_cantidad
             // 
             this.txt_cantidad.Location = new System.Drawing.Point(166, 52);
             this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(100, 22);
+            this.txt_cantidad.Size = new System.Drawing.Size(184, 22);
             this.txt_cantidad.TabIndex = 8;
             // 
             // txt_idReserva
             // 
             this.txt_idReserva.Location = new System.Drawing.Point(166, 26);
             this.txt_idReserva.Name = "txt_idReserva";
-            this.txt_idReserva.Size = new System.Drawing.Size(100, 22);
+            this.txt_idReserva.Size = new System.Drawing.Size(184, 22);
             this.txt_idReserva.TabIndex = 7;
-            // 
-            // txt_empresa
-            // 
-            this.txt_empresa.Location = new System.Drawing.Point(166, 154);
-            this.txt_empresa.Name = "txt_empresa";
-            this.txt_empresa.Size = new System.Drawing.Size(100, 22);
-            this.txt_empresa.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 160);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Empresa";
             // 
             // label5
             // 
@@ -221,13 +193,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_Borrar);
             this.groupBox2.Controls.Add(this.txt_apellido);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.txt_genero);
+            this.groupBox2.Controls.Add(this.btn_AgregarCliente);
             this.groupBox2.Controls.Add(this.txt_edad);
             this.groupBox2.Controls.Add(this.txt_nombre);
             this.groupBox2.Controls.Add(this.txt_ced);
-            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -247,21 +218,14 @@
             this.txt_apellido.Size = new System.Drawing.Size(100, 22);
             this.txt_apellido.TabIndex = 13;
             // 
-            // button2
+            // btn_AgregarCliente
             // 
-            this.button2.Location = new System.Drawing.Point(166, 191);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Agregar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // txt_genero
-            // 
-            this.txt_genero.Location = new System.Drawing.Point(166, 126);
-            this.txt_genero.Name = "txt_genero";
-            this.txt_genero.Size = new System.Drawing.Size(100, 22);
-            this.txt_genero.TabIndex = 10;
+            this.btn_AgregarCliente.Location = new System.Drawing.Point(120, 188);
+            this.btn_AgregarCliente.Name = "btn_AgregarCliente";
+            this.btn_AgregarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_AgregarCliente.TabIndex = 12;
+            this.btn_AgregarCliente.Text = "Agregar";
+            this.btn_AgregarCliente.UseVisualStyleBackColor = true;
             // 
             // txt_edad
             // 
@@ -283,15 +247,6 @@
             this.txt_ced.Name = "txt_ced";
             this.txt_ced.Size = new System.Drawing.Size(100, 22);
             this.txt_ced.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 132);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Genero";
             // 
             // label8
             // 
@@ -339,6 +294,23 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Tabla Reservas";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(166, 104);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(184, 24);
+            this.comboBox1.TabIndex = 13;
+            // 
+            // btn_Borrar
+            // 
+            this.btn_Borrar.Location = new System.Drawing.Point(247, 188);
+            this.btn_Borrar.Name = "btn_Borrar";
+            this.btn_Borrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Borrar.TabIndex = 14;
+            this.btn_Borrar.Text = "Borrar";
+            this.btn_Borrar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,14 +337,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_AgregarReserva;
         private System.Windows.Forms.DateTimePicker dt_fecha;
         private System.Windows.Forms.TextBox txt_habitacion;
-        private System.Windows.Forms.TextBox txt_cliente;
         private System.Windows.Forms.TextBox txt_cantidad;
         private System.Windows.Forms.TextBox txt_idReserva;
-        private System.Windows.Forms.TextBox txt_empresa;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -383,17 +352,17 @@
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_apellido;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txt_genero;
+        private System.Windows.Forms.Button btn_AgregarCliente;
         private System.Windows.Forms.TextBox txt_edad;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox txt_ced;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_Borrar;
     }
 }
 
