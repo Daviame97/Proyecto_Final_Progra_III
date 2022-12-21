@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Cap_Datos
 {
-    internal class cls_InsertarCliente
+    public class cls_InsertarCliente
     {
         SqlConnection ObjConex = new SqlConnection();
         SqlCommand Objcmd = new SqlCommand();
-        public void m_Insertar_Cliente(string ced, string nombre, string apellido, int edad)
+        public void m_Insertar_Cliente(string ced, string nombre, string apellido, int edad, int tel)
         {
             try
             {
@@ -30,7 +30,10 @@ namespace Cap_Datos
                 SqlParameter p_Edad = new SqlParameter("@EDAD", SqlDbType.TinyInt);
                 p_Edad.Value = edad;
 
-                
+                SqlParameter p_Tel = new SqlParameter("@TEL", SqlDbType.Int);
+                p_Edad.Value = p_Tel;
+
+
 
                 //Agregar parametros
                 Objcmd.Parameters.Add(p_Ced);
