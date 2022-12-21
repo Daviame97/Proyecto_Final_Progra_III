@@ -18,7 +18,7 @@ namespace Cap_Datos
         {
             try
             {
-                ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
+                ObjConex.ConnectionString = ("Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
                 ObjAdaptador = new SqlDataAdapter("SELECT * FROM [SCH_CLUB].[TB_FACTURA] ='" + v_COD_FACTURA + "' ", ObjConex);
                 ObjTB_Factura = new DataTable();
                 ObjConex.Open();
