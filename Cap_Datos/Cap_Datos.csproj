@@ -45,6 +45,7 @@
     <Compile Include="cls_InsertarCliente.cs" />
     <Compile Include="cls_InsertarFactura.cs" />
     <Compile Include="cls_InsertarReserva.cs" />
+    <Compile Include="cls_MostrarCliente.cs" />
     <Compile Include="cls_MostrarFactura.cs" />
     <Compile Include="cls_MostrarReserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
