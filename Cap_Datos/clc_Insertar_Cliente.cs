@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cap_Datos
 {
-    public class Class1
+    internal class clc_Insertar_Cliente
     {
     }
 }
