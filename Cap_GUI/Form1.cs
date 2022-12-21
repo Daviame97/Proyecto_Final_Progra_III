@@ -16,5 +16,15 @@ namespace Cap_GUI
         {
             InitializeComponent();
         }
+
+        private void btn_Salir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn_AgregarCliente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
