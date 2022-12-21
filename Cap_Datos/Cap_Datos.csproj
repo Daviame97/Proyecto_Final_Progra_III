@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="cls_BorrarCliente.cs" />
     <Compile Include="cls_InsertarCliente.cs" />
+    <Compile Include="cls_InsertarFactura.cs" />
+    <Compile Include="cls_InsertarReserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
