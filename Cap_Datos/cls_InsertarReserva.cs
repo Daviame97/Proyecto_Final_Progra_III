@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cap_Datos
 {
-    internal class cls_InsertarReserva
+    public class cls_InsertarReserva
     {
         public class cls_Insertar_Reserva
         {

@@ -59,6 +59,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_Telefono = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -242,6 +244,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txt_Telefono);
+            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.btn_Borrar);
             this.groupBox2.Controls.Add(this.txt_apellido);
             this.groupBox2.Controls.Add(this.btn_AgregarCliente);
@@ -352,6 +356,22 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Factura";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(15, 134);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 16);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Telefono";
+            // 
+            // txt_Telefono
+            // 
+            this.txt_Telefono.Location = new System.Drawing.Point(166, 131);
+            this.txt_Telefono.Name = "txt_Telefono";
+            this.txt_Telefono.Size = new System.Drawing.Size(100, 22);
+            this.txt_Telefono.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +428,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_Servicio;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_Telefono;
+        private System.Windows.Forms.Label label12;
     }
 }
 
