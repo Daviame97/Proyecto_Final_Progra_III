@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_Servicio = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_NumHabitacion = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_AgregarReserva = new System.Windows.Forms.Button();
             this.dt_fecha = new System.Windows.Forms.DateTimePicker();
@@ -55,10 +59,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_NumHabitacion = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_Servicio = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -88,6 +88,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas";
+            // 
+            // txt_Servicio
+            // 
+            this.txt_Servicio.Location = new System.Drawing.Point(166, 186);
+            this.txt_Servicio.Name = "txt_Servicio";
+            this.txt_Servicio.Size = new System.Drawing.Size(184, 22);
+            this.txt_Servicio.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(21, 192);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(127, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Servicio Reservado";
+            // 
+            // txt_NumHabitacion
+            // 
+            this.txt_NumHabitacion.Location = new System.Drawing.Point(166, 107);
+            this.txt_NumHabitacion.Name = "txt_NumHabitacion";
+            this.txt_NumHabitacion.Size = new System.Drawing.Size(184, 22);
+            this.txt_NumHabitacion.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Numero Habitacion";
             // 
             // comboBox1
             // 
@@ -319,39 +352,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Factura";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 107);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Numero Habitacion";
-            // 
-            // txt_NumHabitacion
-            // 
-            this.txt_NumHabitacion.Location = new System.Drawing.Point(166, 107);
-            this.txt_NumHabitacion.Name = "txt_NumHabitacion";
-            this.txt_NumHabitacion.Size = new System.Drawing.Size(184, 22);
-            this.txt_NumHabitacion.TabIndex = 15;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 192);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(127, 16);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Servicio Reservado";
-            // 
-            // txt_Servicio
-            // 
-            this.txt_Servicio.Location = new System.Drawing.Point(166, 186);
-            this.txt_Servicio.Name = "txt_Servicio";
-            this.txt_Servicio.Size = new System.Drawing.Size(184, 22);
-            this.txt_Servicio.TabIndex = 17;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,7 +364,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Club Campestre";
+            this.Text = "gracias ";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
