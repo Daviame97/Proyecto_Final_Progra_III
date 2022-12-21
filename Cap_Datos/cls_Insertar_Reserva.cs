@@ -13,7 +13,7 @@ namespace Cap_Datos
             SqlConnection ObjConex = new SqlConnection();
             SqlCommand Objcmd = new SqlCommand();
 
-            public void m_Insertar_Reserva(int v_RESERVA_ID, int v_CANT_PERSONAS, int v_FECHA, int v_NUM_HABITACION, string v_CED_CLIENTE, string v_HABITACION_RESERVADA)
+            public void m_Insertar_Reserva(int v_RESERVA_ID, int v_CANT_PERSONAS, int v_FECHA, int v_NUM_HABITACION, string v_CED_CLIENTE, string v_HABITACION_RESERVADA, string v_SERVICIO_RESERVADO)
             {
                 try
                 {
@@ -37,6 +37,10 @@ namespace Cap_Datos
                     SqlParameter p_HABITACION_RESERVADA = new SqlParameter("@HABITACION_RESERVADA", SqlDbType.VarChar);
                     p_HABITACION_RESERVADA.Value = v_HABITACION_RESERVADA;
 
+                    SqlParameter p_SERVICIO_RESERVADO = new SqlParameter("@SERVICIO_RESERVADO", SqlDbType.NVarChar);
+                    p_SERVICIO_RESERVADO.Value = v_SERVICIO_RESERVADO;
+
+
                     //Agregar parametros
                     Objcmd.Parameters.Add(p_RESERVA_ID);
                     Objcmd.Parameters.Add(p_CANT_PERSONAS);
@@ -44,6 +48,7 @@ namespace Cap_Datos
                     Objcmd.Parameters.Add(p_NUM_HABITACION);
                     Objcmd.Parameters.Add(p_TEL);
                     Objcmd.Parameters.Add(p_HABITACION_RESERVADA);
+                    Objcmd.Parameters.Add(p_SERVICIO_RESERVADO);
 
                     Objcmd.CommandType = CommandType.StoredProcedure; // Llamada al proceso de almacenado en DB Empleados
                     Objcmd.CommandText = "SP_INSERTAR_RESERVAS";

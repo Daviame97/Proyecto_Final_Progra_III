@@ -24,6 +24,7 @@ namespace Cap_Negocios
         public string CED_CLIENTE1 { get => CED_CLIENTE; set => CED_CLIENTE = value; }
         public string HABITACION_FACTURADA1 { get => HABITACION_FACTURADA; set => HABITACION_FACTURADA = value; }
         public string SERVICIO_FACTURADO1 { get => SERVICIO_FACTURADO; set => SERVICIO_FACTURADO = value; }
+        
         public bool ingresar_Factura()
         {
             bool estado = true;
