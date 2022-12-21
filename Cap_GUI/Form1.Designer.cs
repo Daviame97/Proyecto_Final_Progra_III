@@ -44,7 +44,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Consultar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_Mostrar_Informacion = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cb_Servicio = new System.Windows.Forms.ComboBox();
             this.cb_TipoHabitacion = new System.Windows.Forms.ComboBox();
@@ -62,7 +62,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ID_Reserva = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Mostrar_Informacion)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,14 +218,14 @@
             this.btn_Consultar.UseVisualStyleBackColor = true;
             this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
-            // dataGridView1
+            // dgv_Mostrar_Informacion
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(463, 130);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(554, 208);
-            this.dataGridView1.TabIndex = 22;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgv_Mostrar_Informacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Mostrar_Informacion.Location = new System.Drawing.Point(463, 130);
+            this.dgv_Mostrar_Informacion.Name = "dgv_Mostrar_Informacion";
+            this.dgv_Mostrar_Informacion.Size = new System.Drawing.Size(554, 208);
+            this.dgv_Mostrar_Informacion.TabIndex = 22;
+            this.dgv_Mostrar_Informacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // groupBox1
             // 
@@ -389,14 +389,14 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Salir);
             this.Controls.Add(this.btn_Consultar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_Mostrar_Informacion);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Mostrar_Informacion)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -422,7 +422,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_Consultar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_Mostrar_Informacion;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cb_Servicio;
         private System.Windows.Forms.ComboBox cb_TipoHabitacion;

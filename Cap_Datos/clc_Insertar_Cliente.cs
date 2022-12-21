@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data; //Libreria de recursos SQL
-using System.Data.SqlClient; //Libreria de recursos SQL
 
 namespace Cap_Datos
 {
@@ -29,10 +28,10 @@ namespace Cap_Datos
                 SqlParameter p_APELLIDO = new SqlParameter("@APELLIDO", SqlDbType.NVarChar);
                 p_APELLIDO.Value = v_APELLIDO;
 
-                SqlParameter p_EDAD = new SqlParameter("@APELLIDO", SqlDbType.TinyInt);
+                SqlParameter p_EDAD = new SqlParameter("@EDAD", SqlDbType.TinyInt);
                 p_EDAD.Value = v_EDAD;
 
-                SqlParameter p_TEL = new SqlParameter("@APELLIDO", SqlDbType.Int);
+                SqlParameter p_TEL = new SqlParameter("@TEL", SqlDbType.Int);
                 p_TEL.Value = v_TEL;
 
                 //Agregar parametros
