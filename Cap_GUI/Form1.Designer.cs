@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_AgregarReserva = new System.Windows.Forms.Button();
             this.dt_fecha = new System.Windows.Forms.DateTimePicker();
             this.txt_habitacion = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_Borrar = new System.Windows.Forms.Button();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.btn_AgregarCliente = new System.Windows.Forms.Button();
             this.txt_edad = new System.Windows.Forms.TextBox();
@@ -53,8 +55,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btn_Borrar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_NumHabitacion = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_Servicio = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -62,6 +66,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_Servicio);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txt_NumHabitacion);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.btn_AgregarReserva);
             this.groupBox1.Controls.Add(this.dt_fecha);
@@ -76,14 +84,22 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(56, 274);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(356, 247);
+            this.groupBox1.Size = new System.Drawing.Size(356, 286);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(166, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(184, 24);
+            this.comboBox1.TabIndex = 13;
+            // 
             // btn_AgregarReserva
             // 
-            this.btn_AgregarReserva.Location = new System.Drawing.Point(166, 206);
+            this.btn_AgregarReserva.Location = new System.Drawing.Point(166, 243);
             this.btn_AgregarReserva.Name = "btn_AgregarReserva";
             this.btn_AgregarReserva.Size = new System.Drawing.Size(75, 23);
             this.btn_AgregarReserva.TabIndex = 12;
@@ -101,7 +117,7 @@
             // 
             // txt_habitacion
             // 
-            this.txt_habitacion.Location = new System.Drawing.Point(166, 129);
+            this.txt_habitacion.Location = new System.Drawing.Point(166, 157);
             this.txt_habitacion.Name = "txt_habitacion";
             this.txt_habitacion.Size = new System.Drawing.Size(184, 22);
             this.txt_habitacion.TabIndex = 10;
@@ -123,16 +139,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 132);
+            this.label5.Location = new System.Drawing.Point(15, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 16);
+            this.label5.Size = new System.Drawing.Size(122, 16);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Habitacion";
+            this.label5.Text = "Tipo de Habitacion";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 107);
+            this.label4.Location = new System.Drawing.Point(15, 135);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 3;
@@ -175,16 +191,16 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(619, 406);
+            this.btn_Consultar.Location = new System.Drawing.Point(664, 339);
             this.btn_Consultar.Name = "btn_Consultar";
-            this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar.Size = new System.Drawing.Size(149, 23);
             this.btn_Consultar.TabIndex = 2;
-            this.btn_Consultar.Text = "Consultar";
+            this.btn_Consultar.Text = "Generar Factura";
             this.btn_Consultar.UseVisualStyleBackColor = true;
             // 
             // btn_Salir
             // 
-            this.btn_Salir.Location = new System.Drawing.Point(800, 406);
+            this.btn_Salir.Location = new System.Drawing.Point(954, 561);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(75, 23);
             this.btn_Salir.TabIndex = 3;
@@ -210,6 +226,15 @@
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
+            // 
+            // btn_Borrar
+            // 
+            this.btn_Borrar.Location = new System.Drawing.Point(247, 188);
+            this.btn_Borrar.Name = "btn_Borrar";
+            this.btn_Borrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Borrar.TabIndex = 14;
+            this.btn_Borrar.Text = "Borrar";
+            this.btn_Borrar.UseVisualStyleBackColor = true;
             // 
             // txt_apellido
             // 
@@ -288,28 +313,44 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(672, 50);
+            this.label1.Location = new System.Drawing.Point(701, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 20);
+            this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Tabla Reservas";
+            this.label1.Text = "Factura";
             // 
-            // comboBox1
+            // label6
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 104);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 24);
-            this.comboBox1.TabIndex = 13;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 107);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Numero Habitacion";
             // 
-            // btn_Borrar
+            // txt_NumHabitacion
             // 
-            this.btn_Borrar.Location = new System.Drawing.Point(247, 188);
-            this.btn_Borrar.Name = "btn_Borrar";
-            this.btn_Borrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Borrar.TabIndex = 14;
-            this.btn_Borrar.Text = "Borrar";
-            this.btn_Borrar.UseVisualStyleBackColor = true;
+            this.txt_NumHabitacion.Location = new System.Drawing.Point(166, 107);
+            this.txt_NumHabitacion.Name = "txt_NumHabitacion";
+            this.txt_NumHabitacion.Size = new System.Drawing.Size(184, 22);
+            this.txt_NumHabitacion.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(21, 192);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(127, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Servicio Reservado";
+            // 
+            // txt_Servicio
+            // 
+            this.txt_Servicio.Location = new System.Drawing.Point(166, 186);
+            this.txt_Servicio.Name = "txt_Servicio";
+            this.txt_Servicio.Size = new System.Drawing.Size(184, 22);
+            this.txt_Servicio.TabIndex = 17;
             // 
             // Form1
             // 
@@ -363,6 +404,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btn_Borrar;
+        private System.Windows.Forms.TextBox txt_NumHabitacion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_Servicio;
+        private System.Windows.Forms.Label label7;
     }
 }
 
