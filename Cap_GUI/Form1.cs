@@ -97,6 +97,7 @@ namespace Cap_GUI
 
         private void btn_AgregarCliente_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("prueba");
             m_insertar_Cliente();
         }
 
