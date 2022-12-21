@@ -207,7 +207,7 @@ GO
 ---------------------------------------------------------------
 INSERT INTO [SCH_CLUB].[TB_FACTURA]
 ([COD_FACTURA],[FECHA],[TOTAL],[CED_CLIENTE],[HABITACION_FACTURADA],[SERVICIO_FACTURADO])
-VALUES(002,SYSDATETIME(),217000.00,'604420119','CABA_A','TODO INCLUIDO')
+VALUES(002,SYSDATETIME(),217000.00,'504580147','CABA_A','TODO INCLUIDO')
 GO
 
 ---------------------------------------------------------------
