@@ -298,6 +298,7 @@
             this.cb_Clientes.Name = "cb_Clientes";
             this.cb_Clientes.Size = new System.Drawing.Size(184, 24);
             this.cb_Clientes.TabIndex = 13;
+            this.cb_Clientes.SelectedIndexChanged += new System.EventHandler(this.cb_Clientes_SelectedIndexChanged);
             // 
             // btn_AgregarReserva
             // 
@@ -307,6 +308,7 @@
             this.btn_AgregarReserva.TabIndex = 12;
             this.btn_AgregarReserva.Text = "Agregar";
             this.btn_AgregarReserva.UseVisualStyleBackColor = true;
+            this.btn_AgregarReserva.Click += new System.EventHandler(this.btn_AgregarReserva_Click);
             // 
             // dt_fecha
             // 
@@ -387,7 +389,7 @@
             this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox2.ResumeLayout(false);
