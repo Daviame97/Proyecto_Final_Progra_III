@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cap_Datos
 {
-    internal class cls_InsertarFactura
+    public class cls_InsertarFactura
     {
         SqlConnection ObjConex = new SqlConnection();
         SqlCommand Objcmd = new SqlCommand();
