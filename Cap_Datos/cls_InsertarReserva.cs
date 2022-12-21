@@ -19,7 +19,7 @@ namespace Cap_Datos
             {
                 try
                 {
-                    ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
+                    ObjConex.ConnectionString = ("Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
 
                     SqlParameter p_RESERVA_ID = new SqlParameter("@RESERVA_ID", SqlDbType.Int);
                     p_RESERVA_ID.Value = v_RESERVA_ID;
@@ -69,4 +69,5 @@ namespace Cap_Datos
                 }
             }
         }
+    }
 }

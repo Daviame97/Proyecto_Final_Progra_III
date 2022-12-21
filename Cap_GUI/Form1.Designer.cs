@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_Servicio = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_NumHabitacion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_Clientes = new System.Windows.Forms.ComboBox();
             this.btn_AgregarReserva = new System.Windows.Forms.Button();
             this.dt_fecha = new System.Windows.Forms.DateTimePicker();
-            this.txt_habitacion = new System.Windows.Forms.TextBox();
             this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.txt_idReserva = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,6 +46,8 @@
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_Telefono = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.btn_Borrar = new System.Windows.Forms.Button();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.btn_AgregarCliente = new System.Windows.Forms.Button();
@@ -59,8 +59,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txt_Telefono = new System.Windows.Forms.TextBox();
+            this.cb_TipoHabitacion = new System.Windows.Forms.ComboBox();
+            this.cb_Servicio = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -68,14 +68,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_Servicio);
+            this.groupBox1.Controls.Add(this.cb_Servicio);
+            this.groupBox1.Controls.Add(this.cb_TipoHabitacion);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_NumHabitacion);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cb_Clientes);
             this.groupBox1.Controls.Add(this.btn_AgregarReserva);
             this.groupBox1.Controls.Add(this.dt_fecha);
-            this.groupBox1.Controls.Add(this.txt_habitacion);
             this.groupBox1.Controls.Add(this.txt_cantidad);
             this.groupBox1.Controls.Add(this.txt_idReserva);
             this.groupBox1.Controls.Add(this.label5);
@@ -90,13 +90,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reservas";
-            // 
-            // txt_Servicio
-            // 
-            this.txt_Servicio.Location = new System.Drawing.Point(166, 186);
-            this.txt_Servicio.Name = "txt_Servicio";
-            this.txt_Servicio.Size = new System.Drawing.Size(184, 22);
-            this.txt_Servicio.TabIndex = 17;
             // 
             // label7
             // 
@@ -124,13 +117,13 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Numero Habitacion";
             // 
-            // comboBox1
+            // cb_Clientes
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 24);
-            this.comboBox1.TabIndex = 13;
+            this.cb_Clientes.FormattingEnabled = true;
+            this.cb_Clientes.Location = new System.Drawing.Point(166, 132);
+            this.cb_Clientes.Name = "cb_Clientes";
+            this.cb_Clientes.Size = new System.Drawing.Size(184, 24);
+            this.cb_Clientes.TabIndex = 13;
             // 
             // btn_AgregarReserva
             // 
@@ -140,6 +133,7 @@
             this.btn_AgregarReserva.TabIndex = 12;
             this.btn_AgregarReserva.Text = "Agregar";
             this.btn_AgregarReserva.UseVisualStyleBackColor = true;
+            this.btn_AgregarReserva.Click += new System.EventHandler(this.btn_AgregarReserva_Click);
             // 
             // dt_fecha
             // 
@@ -149,13 +143,6 @@
             this.dt_fecha.Name = "dt_fecha";
             this.dt_fecha.Size = new System.Drawing.Size(184, 20);
             this.dt_fecha.TabIndex = 11;
-            // 
-            // txt_habitacion
-            // 
-            this.txt_habitacion.Location = new System.Drawing.Point(166, 157);
-            this.txt_habitacion.Name = "txt_habitacion";
-            this.txt_habitacion.Size = new System.Drawing.Size(184, 22);
-            this.txt_habitacion.TabIndex = 10;
             // 
             // txt_cantidad
             // 
@@ -264,6 +251,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
             // 
+            // txt_Telefono
+            // 
+            this.txt_Telefono.Location = new System.Drawing.Point(166, 131);
+            this.txt_Telefono.Name = "txt_Telefono";
+            this.txt_Telefono.Size = new System.Drawing.Size(100, 22);
+            this.txt_Telefono.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(15, 134);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 16);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Telefono";
+            // 
             // btn_Borrar
             // 
             this.btn_Borrar.Location = new System.Drawing.Point(247, 188);
@@ -356,21 +359,21 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Factura";
             // 
-            // label12
+            // cb_TipoHabitacion
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 134);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 16);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Telefono";
+            this.cb_TipoHabitacion.FormattingEnabled = true;
+            this.cb_TipoHabitacion.Location = new System.Drawing.Point(166, 157);
+            this.cb_TipoHabitacion.Name = "cb_TipoHabitacion";
+            this.cb_TipoHabitacion.Size = new System.Drawing.Size(184, 24);
+            this.cb_TipoHabitacion.TabIndex = 18;
             // 
-            // txt_Telefono
+            // cb_Servicio
             // 
-            this.txt_Telefono.Location = new System.Drawing.Point(166, 131);
-            this.txt_Telefono.Name = "txt_Telefono";
-            this.txt_Telefono.Size = new System.Drawing.Size(100, 22);
-            this.txt_Telefono.TabIndex = 16;
+            this.cb_Servicio.FormattingEnabled = true;
+            this.cb_Servicio.Location = new System.Drawing.Point(166, 187);
+            this.cb_Servicio.Name = "cb_Servicio";
+            this.cb_Servicio.Size = new System.Drawing.Size(184, 24);
+            this.cb_Servicio.TabIndex = 19;
             // 
             // Form1
             // 
@@ -400,7 +403,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_AgregarReserva;
         private System.Windows.Forms.DateTimePicker dt_fecha;
-        private System.Windows.Forms.TextBox txt_habitacion;
         private System.Windows.Forms.TextBox txt_cantidad;
         private System.Windows.Forms.TextBox txt_idReserva;
         private System.Windows.Forms.Label label5;
@@ -422,14 +424,15 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cb_Clientes;
         private System.Windows.Forms.Button btn_Borrar;
         private System.Windows.Forms.TextBox txt_NumHabitacion;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_Servicio;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_Telefono;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cb_Servicio;
+        private System.Windows.Forms.ComboBox cb_TipoHabitacion;
     }
 }
 
