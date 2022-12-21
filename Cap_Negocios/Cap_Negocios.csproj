@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cls_Entidad_Insertar_Cliente.cs" />
+    <Compile Include="cls_Entidad_Insertar_Factura.cs" />
+    <Compile Include="cls_Entidad_Insertar_Reserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
