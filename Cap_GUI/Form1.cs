@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cap_Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,6 +68,18 @@ namespace Cap_GUI
             }
             conexion.Close();
         }
+        cls_Entidad_Insertar_Cliente ObjInsertar_Cliente = new cls_Entidad_Insertar_Cliente();
+        public void m_insertar_Cliente()
+        {
+            ObjInsertar_Cliente.CED1 = (txt_ced.Text);
+            ObjInsertar_Cliente.NOMBRE1 = (txt_nombre.Text);
+            ObjInsertar_Cliente.APELLIDO1 = (txt_apellido.Text);
+            ObjInsertar_Cliente.EDAD1 = int.Parse(txt_edad.Text.Trim());
+            ObjInsertar_Cliente.TEL1 = int.Parse(txt_Telefono.Text.Trim());
+
+            ObjInsertar_Cliente.ingresar_Cliente();
+            MessageBox.Show("Hecho");
+        }
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             Close();
@@ -74,7 +87,7 @@ namespace Cap_GUI
 
         private void btn_AgregarCliente_Click(object sender, EventArgs e)
         {
-
+            m_insertar_Cliente();
         }
 
         private void cb_Clientes_SelectedIndexChanged(object sender, EventArgs e)

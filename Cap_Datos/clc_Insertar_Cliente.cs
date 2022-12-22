@@ -18,7 +18,7 @@ namespace Cap_Datos
         {
             try
             {
-                ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
+                ObjConex.ConnectionString = ("Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
 
                 SqlParameter p_CED = new SqlParameter("@CED",SqlDbType.Char);
                 p_CED.Value = v_CED;
@@ -29,10 +29,10 @@ namespace Cap_Datos
                 SqlParameter p_APELLIDO = new SqlParameter("@APELLIDO", SqlDbType.NVarChar);
                 p_APELLIDO.Value = v_APELLIDO;
 
-                SqlParameter p_EDAD = new SqlParameter("@APELLIDO", SqlDbType.TinyInt);
+                SqlParameter p_EDAD = new SqlParameter("@EDAD", SqlDbType.TinyInt);
                 p_EDAD.Value = v_EDAD;
 
-                SqlParameter p_TEL = new SqlParameter("@APELLIDO", SqlDbType.Int);
+                SqlParameter p_TEL = new SqlParameter("@TEL", SqlDbType.Int);
                 p_TEL.Value = v_TEL;
 
                 //Agregar parametros
