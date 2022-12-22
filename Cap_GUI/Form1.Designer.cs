@@ -32,7 +32,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_Telefono = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.btn_Borrar = new System.Windows.Forms.Button();
             this.txt_apellido = new System.Windows.Forms.TextBox();
             this.btn_AgregarCliente = new System.Windows.Forms.Button();
             this.txt_edad = new System.Windows.Forms.TextBox();
@@ -80,7 +79,6 @@
             // 
             this.groupBox2.Controls.Add(this.txt_Telefono);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.btn_Borrar);
             this.groupBox2.Controls.Add(this.txt_apellido);
             this.groupBox2.Controls.Add(this.btn_AgregarCliente);
             this.groupBox2.Controls.Add(this.txt_edad);
@@ -114,15 +112,6 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "Telefono";
             // 
-            // btn_Borrar
-            // 
-            this.btn_Borrar.Location = new System.Drawing.Point(247, 188);
-            this.btn_Borrar.Name = "btn_Borrar";
-            this.btn_Borrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Borrar.TabIndex = 14;
-            this.btn_Borrar.Text = "Borrar";
-            this.btn_Borrar.UseVisualStyleBackColor = true;
-            // 
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(166, 76);
@@ -132,9 +121,9 @@
             // 
             // btn_AgregarCliente
             // 
-            this.btn_AgregarCliente.Location = new System.Drawing.Point(120, 188);
+            this.btn_AgregarCliente.Location = new System.Drawing.Point(166, 190);
             this.btn_AgregarCliente.Name = "btn_AgregarCliente";
-            this.btn_AgregarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_AgregarCliente.Size = new System.Drawing.Size(75, 25);
             this.btn_AgregarCliente.TabIndex = 12;
             this.btn_AgregarCliente.Text = "Agregar";
             this.btn_AgregarCliente.UseVisualStyleBackColor = true;
@@ -304,7 +293,7 @@
             // 
             this.btn_AgregarReserva.Location = new System.Drawing.Point(166, 243);
             this.btn_AgregarReserva.Name = "btn_AgregarReserva";
-            this.btn_AgregarReserva.Size = new System.Drawing.Size(75, 23);
+            this.btn_AgregarReserva.Size = new System.Drawing.Size(75, 26);
             this.btn_AgregarReserva.TabIndex = 12;
             this.btn_AgregarReserva.Text = "Agregar";
             this.btn_AgregarReserva.UseVisualStyleBackColor = true;
@@ -391,7 +380,7 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Club Campestre";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -408,7 +397,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txt_Telefono;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button btn_Borrar;
         private System.Windows.Forms.TextBox txt_apellido;
         private System.Windows.Forms.Button btn_AgregarCliente;
         private System.Windows.Forms.TextBox txt_edad;

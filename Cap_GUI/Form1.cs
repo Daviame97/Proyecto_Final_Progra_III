@@ -20,7 +20,7 @@ namespace Cap_GUI
         public Form1()
         {
             InitializeComponent();
-            m_consulta_clientes();
+            //m_consulta_clientes();
             m_consulta_TipoHabitacion();
             m_consulta_Servicio();
         }
@@ -68,6 +68,25 @@ namespace Cap_GUI
             }
             conexion.Close();
         }
+        public void m_factura()
+        {
+            
+        }
+        cls_Entidad_Insertar_Factura ObjInsertar_Factura = new cls_Entidad_Insertar_Factura();
+        public void m_insertar_Factura()
+        {
+            //COD_FACTURA1, FECHA1, TOTAL1, CED_CLIENTE1, HABITACION_FACTURADA1, SERVICIO_FACTURADO1);
+            int total;
+            ObjInsertar_Factura.COD_FACTURA1 = int.Parse(txt_idReserva.Text.Trim());
+            ObjInsertar_Factura.FECHA1 = DateTime.Parse(dt_fecha.Text.Trim());
+            ObjInsertar_Factura.TOTAL1 = 0;
+            ObjInsertar_Factura.CED_CLIENTE1 = (txt_ced.Text);
+            ObjInsertar_Factura.HABITACION_FACTURADA1 = (cb_TipoHabitacion.Text);
+            ObjInsertar_Factura.SERVICIO_FACTURADO1 = (cb_Servicio.Text);
+
+            ObjInsertar_Factura.ingresar_Factura();
+            MessageBox.Show("Factura Creada");
+        }
         cls_Entidad_Insertar_Cliente ObjInsertar_Cliente = new cls_Entidad_Insertar_Cliente();
         public void m_insertar_Cliente()
         {
@@ -79,6 +98,7 @@ namespace Cap_GUI
 
             ObjInsertar_Cliente.ingresar_Cliente();
             MessageBox.Show("Hecho");
+            m_consulta_clientes();
         }
         cls_Entidad_Insertar_Reserva ObjInsertar_Reserva = new cls_Entidad_Insertar_Reserva();
         public void m_insertar_Reserva()
@@ -113,6 +133,7 @@ namespace Cap_GUI
         private void btn_AgregarReserva_Click(object sender, EventArgs e)
         {
             m_insertar_Reserva();
+            //m_insertar_Factura();
         }
     }
 }

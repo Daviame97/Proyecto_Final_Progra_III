@@ -13,11 +13,11 @@ namespace Cap_Datos
         SqlConnection ObjConex = new SqlConnection();
         SqlCommand Objcmd = new SqlCommand();
 
-        public void m_Insertar_Factura(int v_COD_FACTURA, int v_FECHA, float v_TOTAL, string v_CED_CLIENTE, string v_HABITACION_FACTURADA, string v_SERVICIO_FACTURADO)
+        public void m_Insertar_Factura(int v_COD_FACTURA, DateTime v_FECHA, float v_TOTAL, string v_CED_CLIENTE, string v_HABITACION_FACTURADA, string v_SERVICIO_FACTURADO)
         {
             try
             {
-                ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
+                ObjConex.ConnectionString = ("Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
 
                 SqlParameter p_COD_FACTURA = new SqlParameter("@COD_FACTURA", SqlDbType.Int);
                 p_COD_FACTURA.Value = v_COD_FACTURA;

@@ -12,14 +12,14 @@ namespace Cap_Negocios
         cls_Insertar_Factura ObjInsertar_Factura  = new cls_Insertar_Factura();
 
         int COD_FACTURA;
-        int FECHA;
+        DateTime FECHA;
         float TOTAL;
         string CED_CLIENTE;
         string HABITACION_FACTURADA;
         string SERVICIO_FACTURADO;
 
         public int COD_FACTURA1 { get => COD_FACTURA; set => COD_FACTURA = value; }
-        public int FECHA1 { get => FECHA; set => FECHA = value; }
+        public DateTime FECHA1 { get => FECHA; set => FECHA = value; }
         public float TOTAL1 { get => TOTAL; set => TOTAL = value; }
         public string CED_CLIENTE1 { get => CED_CLIENTE; set => CED_CLIENTE = value; }
         public string HABITACION_FACTURADA1 { get => HABITACION_FACTURADA; set => HABITACION_FACTURADA = value; }
