@@ -80,6 +80,21 @@ namespace Cap_GUI
             ObjInsertar_Cliente.ingresar_Cliente();
             MessageBox.Show("Hecho");
         }
+        cls_Entidad_Insertar_Reserva ObjInsertar_Reserva = new cls_Entidad_Insertar_Reserva();
+        public void m_insertar_Reserva()
+        {
+            //RESERVA_ID1, CANT_PERSONAS1, FECHA1, NUM_HABITACION1, CED_CLIENTE1, HABITACION_RESERVADA1, SERVICIO_RESERVADO1);
+            ObjInsertar_Reserva.RESERVA_ID1 = int.Parse(txt_idReserva.Text.Trim());
+            ObjInsertar_Reserva.CANT_PERSONAS1 = int.Parse(txt_cantidad.Text.Trim());
+            ObjInsertar_Reserva.FECHA1 = DateTime.Parse(dt_fecha.Text.Trim());
+            ObjInsertar_Reserva.NUM_HABITACION1 = int.Parse(txt_NumHabitacion.Text.Trim());
+            ObjInsertar_Reserva.CED_CLIENTE1 = (cb_Clientes.Text);
+            ObjInsertar_Reserva.HABITACION_RESERVADA1 = (cb_TipoHabitacion.Text);
+            ObjInsertar_Reserva.SERVICIO_RESERVADO1 = (cb_Servicio.Text);
+
+            ObjInsertar_Reserva.ingresar_Reserva();
+            MessageBox.Show("Hecho");
+        }
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             Close();
@@ -97,7 +112,7 @@ namespace Cap_GUI
 
         private void btn_AgregarReserva_Click(object sender, EventArgs e)
         {
-
+            m_insertar_Reserva();
         }
     }
 }

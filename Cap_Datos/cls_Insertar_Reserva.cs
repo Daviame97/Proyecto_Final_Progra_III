@@ -13,11 +13,11 @@ namespace Cap_Datos
             SqlConnection ObjConex = new SqlConnection();
             SqlCommand Objcmd = new SqlCommand();
 
-            public void m_Insertar_Reserva(int v_RESERVA_ID, int v_CANT_PERSONAS, int v_FECHA, int v_NUM_HABITACION, string v_CED_CLIENTE, string v_HABITACION_RESERVADA, string v_SERVICIO_RESERVADO)
+            public void m_Insertar_Reserva(int v_RESERVA_ID, int v_CANT_PERSONAS, DateTime v_FECHA, int v_NUM_HABITACION, string v_CED_CLIENTE, string v_HABITACION_RESERVADA, string v_SERVICIO_RESERVADO)
             {
                 try
                 {
-                    ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
+                    ObjConex.ConnectionString = ("Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
 
                     SqlParameter p_RESERVA_ID = new SqlParameter("@RESERVA_ID", SqlDbType.Int);
                     p_RESERVA_ID.Value = v_RESERVA_ID;

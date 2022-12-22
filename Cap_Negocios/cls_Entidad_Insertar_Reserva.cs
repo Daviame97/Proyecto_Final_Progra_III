@@ -13,7 +13,7 @@ namespace Cap_Negocios
 
         int RESERVA_ID;
         int CANT_PERSONAS;
-        int FECHA;
+        DateTime FECHA;
         int NUM_HABITACION;
         string CED_CLIENTE;
         string HABITACION_RESERVADA;
@@ -21,7 +21,7 @@ namespace Cap_Negocios
 
         public int RESERVA_ID1 { get => RESERVA_ID; set => RESERVA_ID = value; }
         public int CANT_PERSONAS1 { get => CANT_PERSONAS; set => CANT_PERSONAS = value; }
-        public int FECHA1 { get => FECHA; set => FECHA = value; }
+        public DateTime FECHA1 { get => FECHA; set => FECHA = value; }
         public int NUM_HABITACION1 { get => NUM_HABITACION; set => NUM_HABITACION = value; }
         public string CED_CLIENTE1 { get => CED_CLIENTE; set => CED_CLIENTE = value; }
         public string HABITACION_RESERVADA1 { get => HABITACION_RESERVADA; set => HABITACION_RESERVADA = value; }
