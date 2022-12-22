@@ -1,5 +1,6 @@
 ﻿using Cap_Negocios;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace Cap_GUI
         SqlConnection conexion = new SqlConnection();
         SqlDataAdapter adaptador;
         DataTable tblClientes;
+        SqlCommand cmd=new SqlCommand();
         public Form1()
         {
             InitializeComponent();
@@ -123,6 +125,8 @@ namespace Cap_GUI
         private void btt_Ingresar_Fac_Click(object sender, EventArgs e)
         {
             m_insertar_Factura();
+            cmd.Parameters.Clear();
+
 
         }
 
@@ -139,7 +143,15 @@ namespace Cap_GUI
             ObjInsertar_Fac.ingresar_Factura();
             MessageBox.Show("Hecho");
         }
-
+        public void m_consultar_Factura()
+        {
+            string query = ("Select * from [SCH_CLUB].[TB_FACTURA]  where COD_FACTURA = '" + txt_Cod_Factura.Text + "'");//recordar ".text"
+            SqlCommand comando = new SqlCommand(query, conexion); //comando = informacion query y la conexion
+            SqlDataAdapter date = new SqlDataAdapter(comando);
+            DataTable table = new DataTable(); //tabla en memoria
+            date.Fill(table);  //llene tabla con la conexion y el query
+            dataGridView1.DataSource = table;
+        }
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             Close();
@@ -169,7 +181,7 @@ namespace Cap_GUI
 
         private void btn_Consultar_Click(object sender, EventArgs e)
         {
-            m_insertar_Factura();
+            m_consultar_Factura();
         }
 
         public void limpiar_datos()
