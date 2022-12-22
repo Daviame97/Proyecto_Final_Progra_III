@@ -60,16 +60,31 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ID_Reserva = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_Cod_Factura = new System.Windows.Forms.TextBox();
+            this.txt_Total = new System.Windows.Forms.TextBox();
+            this.dtp_Fecha_Factura = new System.Windows.Forms.DateTimePicker();
+            this.txt_Ced_Cliente = new System.Windows.Forms.TextBox();
+            this.txt_Habitacion_Fac = new System.Windows.Forms.TextBox();
+            this.txt_Servicio_Fac = new System.Windows.Forms.TextBox();
+            this.btt_Ingresar_Fac = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(707, 68);
+            this.label1.Location = new System.Drawing.Point(699, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 20;
@@ -198,7 +213,7 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(664, 340);
+            this.btn_Consultar.Location = new System.Drawing.Point(758, 538);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(149, 23);
             this.btn_Consultar.TabIndex = 17;
@@ -209,7 +224,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(481, 115);
+            this.dataGridView1.Location = new System.Drawing.Point(465, 318);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(554, 208);
             this.dataGridView1.TabIndex = 16;
@@ -368,11 +383,140 @@
             this.ID_Reserva.TabIndex = 0;
             this.ID_Reserva.Text = "ID_Reserva";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btt_Ingresar_Fac);
+            this.groupBox3.Controls.Add(this.txt_Servicio_Fac);
+            this.groupBox3.Controls.Add(this.txt_Habitacion_Fac);
+            this.groupBox3.Controls.Add(this.txt_Ced_Cliente);
+            this.groupBox3.Controls.Add(this.dtp_Fecha_Factura);
+            this.groupBox3.Controls.Add(this.txt_Total);
+            this.groupBox3.Controls.Add(this.txt_Cod_Factura);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Location = new System.Drawing.Point(496, 47);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(481, 242);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Facturacion";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(30, 155);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(109, 13);
+            this.label17.TabIndex = 4;
+            this.label17.Text = "Habitacion Facturada";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(30, 123);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 13);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Ced de Cliente";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(30, 93);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Total";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(30, 68);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(37, 13);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Fecha";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(27, 35);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Cod_Factura";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(30, 182);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(96, 13);
+            this.label18.TabIndex = 5;
+            this.label18.Text = "Servicio Facturado";
+            // 
+            // txt_Cod_Factura
+            // 
+            this.txt_Cod_Factura.Location = new System.Drawing.Point(146, 35);
+            this.txt_Cod_Factura.Name = "txt_Cod_Factura";
+            this.txt_Cod_Factura.Size = new System.Drawing.Size(100, 20);
+            this.txt_Cod_Factura.TabIndex = 6;
+            // 
+            // txt_Total
+            // 
+            this.txt_Total.Location = new System.Drawing.Point(146, 98);
+            this.txt_Total.Name = "txt_Total";
+            this.txt_Total.Size = new System.Drawing.Size(100, 20);
+            this.txt_Total.TabIndex = 7;
+            // 
+            // dtp_Fecha_Factura
+            // 
+            this.dtp_Fecha_Factura.Location = new System.Drawing.Point(146, 67);
+            this.dtp_Fecha_Factura.Name = "dtp_Fecha_Factura";
+            this.dtp_Fecha_Factura.Size = new System.Drawing.Size(200, 20);
+            this.dtp_Fecha_Factura.TabIndex = 8;
+            // 
+            // txt_Ced_Cliente
+            // 
+            this.txt_Ced_Cliente.Location = new System.Drawing.Point(146, 124);
+            this.txt_Ced_Cliente.Name = "txt_Ced_Cliente";
+            this.txt_Ced_Cliente.Size = new System.Drawing.Size(100, 20);
+            this.txt_Ced_Cliente.TabIndex = 9;
+            // 
+            // txt_Habitacion_Fac
+            // 
+            this.txt_Habitacion_Fac.Location = new System.Drawing.Point(146, 155);
+            this.txt_Habitacion_Fac.Name = "txt_Habitacion_Fac";
+            this.txt_Habitacion_Fac.Size = new System.Drawing.Size(100, 20);
+            this.txt_Habitacion_Fac.TabIndex = 10;
+            // 
+            // txt_Servicio_Fac
+            // 
+            this.txt_Servicio_Fac.Location = new System.Drawing.Point(146, 182);
+            this.txt_Servicio_Fac.Name = "txt_Servicio_Fac";
+            this.txt_Servicio_Fac.Size = new System.Drawing.Size(100, 20);
+            this.txt_Servicio_Fac.TabIndex = 11;
+            // 
+            // btt_Ingresar_Fac
+            // 
+            this.btt_Ingresar_Fac.Location = new System.Drawing.Point(146, 208);
+            this.btt_Ingresar_Fac.Name = "btt_Ingresar_Fac";
+            this.btt_Ingresar_Fac.Size = new System.Drawing.Size(121, 23);
+            this.btt_Ingresar_Fac.TabIndex = 12;
+            this.btt_Ingresar_Fac.Text = "Ingresar factura";
+            this.btt_Ingresar_Fac.UseVisualStyleBackColor = true;
+            this.btt_Ingresar_Fac.Click += new System.EventHandler(this.btt_Ingresar_Fac_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1097, 640);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_Salir);
@@ -387,6 +531,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,6 +572,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ID_Reserva;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txt_Servicio_Fac;
+        private System.Windows.Forms.TextBox txt_Habitacion_Fac;
+        private System.Windows.Forms.TextBox txt_Ced_Cliente;
+        private System.Windows.Forms.DateTimePicker dtp_Fecha_Factura;
+        private System.Windows.Forms.TextBox txt_Total;
+        private System.Windows.Forms.TextBox txt_Cod_Factura;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btt_Ingresar_Fac;
     }
 }
 
