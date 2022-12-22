@@ -27,8 +27,7 @@ namespace Cap_GUI
 
         public void m_consulta_clientes()
         {
-            int id = 0;
-            conexion.ConnectionString = "Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True";
+            conexion.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
             string query = "SELECT *FROM [SCH_PERSONA].[TB_CLIENTES]";
             SqlCommand cmd = new SqlCommand(query, conexion);
             conexion.Open();
@@ -42,8 +41,9 @@ namespace Cap_GUI
         }
         public void m_consulta_TipoHabitacion()
         {
-            int id = 0;
-            conexion.ConnectionString = "Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True";
+            cls_Entidad_Mostrar_Cliente ObjMostrar_Cliente = new cls_Entidad_Mostrar_Cliente();
+
+            conexion.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
             string query = "SELECT *FROM [SCH_CLUB].[TB_TIPO_HABITACIONES]";
             SqlCommand cmd = new SqlCommand(query, conexion);
             conexion.Open();
@@ -53,11 +53,13 @@ namespace Cap_GUI
                 cb_TipoHabitacion.Items.Add(dr[0]);
             }
             conexion.Close();
+
+            //ObjMostrar_Cliente.CED1 = (cb_Clientes.Text);
+            //dgv_Mostrar_Informacion.DataSource = ObjMostrar_Cliente.m_Consultar_Cliente();
         }
         public void m_consulta_Servicio()
         {
-            int id = 0;
-            conexion.ConnectionString = "Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True";
+            conexion.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
             string query = "SELECT *FROM [SCH_CLUB].[TB_SERVICIOS]";
             SqlCommand cmd = new SqlCommand(query, conexion);
             conexion.Open();

@@ -19,7 +19,7 @@ namespace Cap_Datos
             try
             {
                 ObjConex.ConnectionString = ("Data Source=LAPTOP-UTFDK6V4\\SQLEXPRESS;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True");
-                ObjAdaptador = new SqlDataAdapter("SELECT * FROM [SCH_PERSONA].[TB_CLIENTES] ='" + v_CED + "' ", ObjConex);
+                ObjAdaptador = new SqlDataAdapter("SELECT * FROM [SCH_PERSONA].[TB_CLIENTES] = '" + v_CED + "' ", ObjConex);
                 ObjTB_Cliente = new DataTable();
                 ObjConex.Open();
                 ObjAdaptador.Fill(ObjTB_Cliente); // Carga la informacion en el "GritView"
