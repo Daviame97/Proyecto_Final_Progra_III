@@ -198,12 +198,13 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(670, 357);
+            this.btn_Consultar.Location = new System.Drawing.Point(664, 340);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(149, 23);
             this.btn_Consultar.TabIndex = 17;
             this.btn_Consultar.Text = "Generar Factura";
             this.btn_Consultar.UseVisualStyleBackColor = true;
+            this.btn_Consultar.Click += new System.EventHandler(this.btn_Consultar_Click);
             // 
             // dataGridView1
             // 

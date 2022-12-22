@@ -20,7 +20,7 @@ namespace Cap_GUI
         public Form1()
         {
             InitializeComponent();
-            //m_consulta_clientes();
+            m_consulta_clientes();
             m_consulta_TipoHabitacion();
             m_consulta_Servicio();
         }
@@ -28,6 +28,7 @@ namespace Cap_GUI
         public void m_consulta_clientes()
         {
             int id = 0;
+            cb_Clientes.Items.Clear();
             conexion.ConnectionString = "Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True";
             string query = "SELECT *FROM [SCH_PERSONA].[TB_CLIENTES]";
             SqlCommand cmd = new SqlCommand(query, conexion);
@@ -43,6 +44,7 @@ namespace Cap_GUI
         public void m_consulta_TipoHabitacion()
         {
             int id = 0;
+            cb_TipoHabitacion.Items.Clear();    
             conexion.ConnectionString = "Data Source=LUISBLANCO-PC\\SQL2019_DEV;Initial Catalog=DB_CLUB_CAMPESTRE_UAM;Integrated Security=True";
             string query = "SELECT *FROM [SCH_CLUB].[TB_TIPO_HABITACIONES]";
             SqlCommand cmd = new SqlCommand(query, conexion);
@@ -98,7 +100,18 @@ namespace Cap_GUI
 
             ObjInsertar_Cliente.ingresar_Cliente();
             MessageBox.Show("Hecho");
+            
             m_consulta_clientes();
+        }
+        public void limpiar_datos()
+        {
+            txt_ced.Clear();
+            txt_nombre.Clear();
+            txt_apellido.Clear();
+            txt_edad.Clear();
+            txt_Telefono.Clear();
+            cb_Clientes.Text = " ";
+
         }
         cls_Entidad_Insertar_Reserva ObjInsertar_Reserva = new cls_Entidad_Insertar_Reserva();
         public void m_insertar_Reserva()
@@ -122,6 +135,7 @@ namespace Cap_GUI
 
         private void btn_AgregarCliente_Click(object sender, EventArgs e)
         {
+            
             m_insertar_Cliente();
         }
 
@@ -133,7 +147,17 @@ namespace Cap_GUI
         private void btn_AgregarReserva_Click(object sender, EventArgs e)
         {
             m_insertar_Reserva();
-            //m_insertar_Factura();
+            
+        }
+        
+        private void btn_ActualizarClientes_Click(object sender, EventArgs e)
+        {
+            m_consulta_clientes();
+        }
+
+        private void btn_Consultar_Click(object sender, EventArgs e)
+        {
+            m_insertar_Factura();
         }
     }
 }
